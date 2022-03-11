@@ -8,6 +8,10 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
+
+            Player Human = new HumanPlayer();
+            Human.Name = "Rob";
+
             SmackTalkingPlayer player1 = new SmackTalkingPlayer();
             player1.Name = "Bob";
 
@@ -33,7 +37,7 @@ namespace ShootingDice
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, large, Human
             };
 
             PlayMany(players);
